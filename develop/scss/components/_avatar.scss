@@ -1,0 +1,23 @@
+.avatar {
+	float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+	margin-right: 24px;
+}
+
+.alignright .avatar {
+	margin-left: 24px;
+}
+
+.author-box .avatar {
+	height: 80px;
+	width: 80px;
+}
+
+.comment .avatar {
+	height: 50px;
+	margin: 0 16px 24px 0;
+	width: 50px;
+}

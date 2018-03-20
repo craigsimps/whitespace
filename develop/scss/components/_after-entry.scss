@@ -1,0 +1,22 @@
+.after-entry {
+	border-top: 1px solid #eee;
+	padding: 40px 0;
+}
+
+.after-entry .enews {
+	background-color: #00a99d;
+	border-radius: 3px;
+	padding: 40px;
+}
+
+.after-entry .enews-widget input[type="submit"] {
+	background-color: #fff;
+	color: #222;
+	margin: 0;
+	width: 100%;
+}
+
+.after-entry .enews-widget input:hover[type="submit"] {
+	background-color: #00baad;
+	color: #fff;
+}

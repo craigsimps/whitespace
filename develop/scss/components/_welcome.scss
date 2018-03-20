@@ -1,0 +1,77 @@
+.welcome {
+	background-color: #3e3e3e;
+	color: #fff;
+	padding: 5%;
+	text-align: center;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+
+	@include media($screen--s) {
+		padding: 10%;
+	}
+
+	@include media($screen--m) {
+		font-size: 20px;
+	}
+
+	@include media($screen--l) {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		min-height: 600px;
+	}
+
+	@include media($screen--xl) {
+		font-size: 24px;
+	}
+}
+
+.welcome .backstretch {
+	background-color: #3e3e3e;
+}
+
+.welcome,
+.welcome a,
+.welcome .entry-title a,
+.welcome .widget-title {
+	color: #fff;
+}
+
+.welcome .widget {
+	margin-bottom: 0;
+	padding: 50px 5%;
+
+	@include media($screen--m) {
+		padding: 100px 5%;
+	}
+}
+
+.welcome .widget + .widget {
+	padding-top: 0;
+}
+
+.welcome__title {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	max-width: 1000px;
+
+	@include media($screen--m) {
+		font-size: 48px;
+	}
+
+	@include media($screen--xl) {
+		margin-bottom: 24px;
+	}
+
+	+ p {
+		line-height: 1.4;
+		margin: 0 auto 30px;
+		max-width: 840px;
+	}
+}
+
+.welcome p:last-child {
+	margin-bottom: 0;
+}

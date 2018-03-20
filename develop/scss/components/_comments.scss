@@ -1,0 +1,77 @@
+p.comment-meta,
+.entry-comments .comment,
+.entry-comments .comment-reply {
+	margin-bottom: 40px;
+}
+
+.comment-respond {
+	background-color: #f5f5f5;
+	padding-top: 60px;
+}
+
+.entry-comments .comment:last-child {
+	margin-bottom: 0;
+}
+
+.entry-comments,
+.entry-pings {
+	background-color: #f5f5f5;
+	padding-top: 40px;
+}
+
+.comment-header {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.comment-notes,
+.entry-pings .reply {
+	display: none;
+}
+
+.entry-comments .comment {
+	border-bottom: 1px solid #eee;
+}
+
+p.comment-form-comment {
+	margin-bottom: 20px;
+}
+
+p.form-submit,
+.entry-comments .children .comment,
+.entry-comments .comment-author {
+	margin: 0;
+}
+
+.entry-comments .comment {
+	clear: both;
+}
+
+.entry-comments .children .comment {
+	border: none;
+}
+
+.comment-list li {
+	list-style-type: none;
+}
+
+.author-box,
+.entry-comments,
+.comment-respond {
+	padding-left: 5%;
+	padding-right: 5%;
+
+	@include media($screen--s) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	@include media($screen--m) {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+.comment-respond {
+	padding-bottom: 60px;
+}

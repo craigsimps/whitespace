@@ -1,0 +1,170 @@
+.genesis-nav-menu .menu-item {
+	line-height: 1;
+	text-align: left;
+
+	@include media($screen--m) {
+		display: inline-block;
+	}
+}
+
+.genesis-nav-menu a {
+	color: rgba(255, 255, 255, 0.3);
+	display: block;
+	font-size: 16px;
+	padding: 20px 5%;
+	text-transform: uppercase;
+
+	@include media($screen--s) {
+		padding: 20px 10%;
+	}
+
+	@include media($screen--m) {
+		display: inline-block;
+		padding: 20px 15px;
+	}
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu .active > a,
+.genesis-nav-menu .sub-menu .active > a:hover {
+	color: #fff;
+}
+
+.genesis-nav-menu .sub-menu {
+	background-color: rgba(255, 255, 255, 0.05);
+	left: auto;
+	opacity: 1;
+	position: relative;
+	-webkit-transition: opacity .4s ease-in-out;
+	-moz-transition: opacity .4s ease-in-out;
+	-ms-transition: opacity .4s ease-in-out;
+	-o-transition: opacity .4s ease-in-out;
+	transition: opacity .4s ease-in-out;
+	z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+	display: block;
+	font-size: 14px;
+	padding: 16px 20px;
+	position: relative;
+}
+
+.genesis-nav-menu .menu-item:hover {
+	position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+	left: auto;
+	opacity: 1;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+	display: none;
+
+	@include media($screen--m) {
+		display: block;
+
+		.genesis-nav-menu {
+				float: right;
+		}
+	}
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.nav-secondary {
+	background-color: #00a99d;
+	border-top: 1px solid #00baad;
+}
+
+/* Responsive Navigation
+--------------------------------------------- */
+
+.menu-toggle {
+	@include position(absolute, 20px 5% null null);
+	color: #fff;
+	padding: 18px;
+	text-align: center;
+
+	@include media($screen--s) {
+		right: 10%;
+	}
+
+	@include media($screen--m) {
+		display: none;
+	}
+
+	.admin-bar & {
+		top: 66px;
+	}
+}
+
+.menu-toggle,
+.responsive-menu .menu-item-has-children {
+	cursor: pointer;
+}
+
+.menu-toggle,
+.responsive-menu .menu-item {
+	display: block;
+}
+
+.responsive-menu,
+.responsive-menu > .menu-item > .sub-menu {
+	display: none;
+}
+
+.responsive-menu > .menu-item-has-children:before,
+.menu-toggle::before {
+	color: #fff;
+}
+
+.menu-toggle::before {
+	content: "\f0c9";
+	font: normal 20px/1 'FontAwesome';
+	margin: 0 auto;
+}
+
+.responsive-menu > .menu-item-has-children:before {
+	content: "\e806";
+	float: right;
+	font: normal 16px/1 'dashicons';
+	height: 16px;
+	padding: 15px 20px;
+	right: 0;
+	text-align: right;
+	z-index: 9999;
+}
+
+.responsive-menu .menu-open.menu-item-has-children:before {
+	content: "\e806";
+}
+
+.responsive-menu .sub-menu {
+	border-top-width: 0;
+}
+
+.responsive-menu .sub-menu .sub-menu {
+	background-color: transparent;
+	padding-left: 25px;
+}
+
+.menu-text {
+	display: none;
+	text-transform: uppercase;
+
+	@include media($screen--s) {
+		display: inline;
+	}
+}

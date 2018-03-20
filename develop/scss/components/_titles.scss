@@ -1,0 +1,29 @@
+.entry-title {
+	font-size: 30px;
+
+	.single & {
+		@include media($screen--s) {
+			font-size: 36px;
+		}
+	}
+}
+
+.search .archive-title {
+	margin-bottom: 0;
+}
+
+.entry-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.entry-title a {
+	color: #383F49;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	color: #464E5A;
+}

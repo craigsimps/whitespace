@@ -1,0 +1,28 @@
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+.gist {
+	margin-bottom: 24px;
+
+	td {
+		border-top-width: 0;
+	}
+
+	.js-line-number {
+		border-right: 1px solid #ddd;
+	}
+
+	.gist-data {
+		border-bottom-width: 0 !important;
+	}
+}

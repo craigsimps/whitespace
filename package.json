@@ -1,0 +1,28 @@
+{
+  "name": "whitespace",
+  "version": "2.0.0",
+  "description": "Child theme for creating custom websites using the Genesis Framework.",
+  "homepage": "https://craigsimpson.scot/",
+  "keywords": [
+    "Whitespace",
+    "Genesis",
+    "WordPress",
+    "child theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/craigsimps/whitespace/issues"
+  },
+  "license": "GPL-2.0",
+  "author": "Craig Simpson <craig@craigsimpson.scot>",
+  "repository": "https://github.com/craigsimps/whitespace.git",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stats": "^0.0.4",
+    "gulp-wp-toolkit": "^2.0",
+    "jquery-backstretch": "^2.1.16",
+    "list.js": "^1.5.0",
+    "node-bourbon": "4.2.8",
+    "node-neat": "^1.7.2"
+  },
+  "private": true
+}

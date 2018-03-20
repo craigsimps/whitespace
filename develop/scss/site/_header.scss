@@ -1,0 +1,51 @@
+.site-header {
+	background-color: #323A41;
+	line-height: 1;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+	@include media($screen--m) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+.title-area {
+	padding: 0 5%;
+	position: relative;
+
+	@include media($screen--s) {
+		padding: 0 10%;
+	}
+
+	@include media($screen--m) {
+		float: left;
+		padding: 0;
+		text-align: left;
+	}
+}
+
+.site-title {
+	font-family: "Raleway", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+.site-title a,
+.site-title a:hover {
+	color: #fff;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.site-description {
+	display: block;
+	height: 0;
+	text-indent: -9999px;
+}

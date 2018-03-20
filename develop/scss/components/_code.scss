@@ -1,0 +1,59 @@
+.post-type-archive-code {
+	.content {
+		overflow: hidden;
+		padding: 40px 5%;
+
+		@include media($screen--s) {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+
+		@include media($screen--l) {
+			padding-left: 20%;
+			padding-right: 20%;
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+
+		@include media($screen--xl) {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.snippets {
+		list-style-type: square;
+		margin-left: 24px;
+
+		li {
+			list-style-type: square;
+			vertical-align: middle;
+		}
+	}
+}
+
+.snippet-filter {
+	background: #84919E;
+
+	&:hover,
+	&:focus {
+		background-color: darken(#84919E, 5%);
+	}
+
+	&.selected {
+		background-color: #cb2027;
+	}
+}
+
+.tag {
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 700;
+	color: #fff;
+	padding: 4px;
+	line-height: 1;
+	margin-top: -2px;
+	background-color: lighten(#84919E, 10%);
+	text-transform: uppercase;
+}

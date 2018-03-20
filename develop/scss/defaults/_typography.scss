@@ -1,0 +1,96 @@
+body {
+	background-color: #323A41;
+	color: #555;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 1.618;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+
+	@include media($screen--m) {
+		font-size: 20px;
+	}
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.archive .content .entry,
+.button,
+.gallery img {
+	transition:         all 0.2s ease-in-out;
+}
+
+::-moz-selection,
+::selection {
+	background: #fff4b1;
+	color: #222;
+}
+
+a {
+	color: #cb2027;
+	text-decoration: none;
+}
+
+a:focus,
+a:hover {
+	color: #222;
+}
+
+.entry-content a {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 40px;
+}
+
+blockquote::before {
+	content: "\201C";
+	display: block;
+	font-size: 30px;
+	height: 0;
+	left: -20px;
+	position: relative;
+	top: -10px;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+	clear: both;
+	margin: 40px 0;
+}

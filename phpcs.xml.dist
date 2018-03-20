@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<ruleset name="WordPress Theme">
+    <description>PHPCS Ruleset for a WordPress Theme</description>
+    <rule ref="WordPress">
+        <exclude name="WordPress.VIP"/>
+    </rule>
+    <rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true"/>
+			<property name="strict_class_file_names" value="false"/>
+		</properties>
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+	</rule>
+	<rule ref="WordPress.WP.I18n">
+	    <properties>
+	        <property name="text_domain" type="array" value="whitespace" />
+	    </properties>
+	</rule>
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+	    <properties>
+	        <property name="minimum_supported_version" value="4.7" />
+	    </properties>
+	</rule>
+	<rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+	    <properties>
+	        <property name="blank_line_check" value="true" />
+	    </properties>
+	</rule>
+	<rule ref="WordPress.XSS.EscapeOutput">
+        <properties>
+            <property name="customAutoEscapedFunctions" type="array" value="genesis_attr"/>
+        </properties>
+    </rule>
+</ruleset>

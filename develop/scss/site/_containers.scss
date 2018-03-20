@@ -1,0 +1,26 @@
+.site-container {
+	background-color: #fff;
+
+	@include media($screen--m) {
+		@include outer-container(1200px);
+	}
+}
+
+.site-inner {
+	padding: 0;
+}
+
+.content {
+	overflow: hidden;
+
+	padding: 40px 5%;
+
+	@include media($screen--s) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	@include media($screen--m) {
+		padding: 0;
+	}
+}

@@ -1,0 +1,77 @@
+.entry,
+.archive .entry:last-of-type,
+.page.page-template-page_blog-php .content .entry {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 30px;
+}
+
+.archive .content .entry {
+	margin-bottom: 30px;
+}
+
+.entry:last-of-type,
+.page.page-template-page_blog-php .content .entry:last-of-type,
+.widget .entry:last-of-type {
+	border-bottom-width: 0;
+}
+
+.single .content .entry-content p:last-child {
+	margin-bottom: 40px;
+}
+
+.page .entry,
+.single .entry {
+	border-bottom-width: 0;
+	margin-bottom: 30px;
+}
+
+.entry-content ol,
+.entry-content ul {
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+
+.entry-content ol > li {
+	list-style-type: decimal;
+}
+
+.entry-content ul > li {
+	list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+	margin-bottom: 0;
+}
+
+.entry-content code {
+	background-color: #323a41;
+	color: #ddd;
+	padding: 2px 4px;
+}
+
+.single .entry {
+	padding: 40px 5%;
+
+	@include media($screen--s) {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	@include media($screen--m) {
+		padding: 100px 0;
+	}
+}
+
+.intro {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #aaa;
+	margin: 0;
+	padding: 20px 0;
+	border-bottom: solid 1px #eee;
+	border-top: solid 1px #eee;
+}

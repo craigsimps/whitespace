@@ -1,0 +1,22 @@
+# Ignore node_modules.
+node_modules/
+
+# Ignore folders with output which is built.
+assets
+develop/languages
+
+# Ignore Composer packages.
+vendor
+
+# Allow scss vendor folder.
+!develop/scss/vendor/
+
+# Ignore the stylesheet, and map.
+style.css
+style.css.map
+
+# Ignore local PHPCS config file.
+phpcs.xml
+
+# Ignore lock files, we want the latest versions.
+*.lock

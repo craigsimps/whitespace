@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #fff;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0 30px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	color: #222;
+	margin-bottom: 24px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2,
+h3 {
+	font-size: 30px;
+}
+
+.comment-respond h3,
+.entry-comments h3 {
+	margin-bottom: 40px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 18px;
+}

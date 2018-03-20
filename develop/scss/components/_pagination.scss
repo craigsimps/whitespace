@@ -1,0 +1,34 @@
+.archive-pagination .pagination-next,
+.archive-pagination .pagination-previous {
+	position: fixed;
+	top: 45%;
+}
+
+.archive-pagination .pagination-next {
+	right: 0;
+}
+
+.archive-pagination .pagination-previous {
+	left: 0;
+}
+
+.archive-pagination.pagination a {
+	background-color: #cb2027;
+	bottom: 0;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-size: 30px;
+	padding: 16px 12px 20px;
+	position: relative;
+	z-index: 100;
+}
+
+.archive-pagination.pagination a:hover,
+.archive-pagination.pagination a:focus {
+	background-color: #cb2027;
+	color: #fff;
+}
+
+.entry-pagination.pagination {
+	margin-bottom: 20px;
+}
