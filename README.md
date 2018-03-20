@@ -1,6 +1,6 @@
 # Whitespace Theme
 
-[[https://github.com/craigsimps/whitespace/raw/master/develop/images/screenshot.png]]
+![Whitespace Theme](https://github.com/craigsimps/whitespace/raw/master/develop/images/screenshot.png)
 
 This theme is currently in use on my website, [craigsimpson.scot](https://craigsimpson.scot). It's a custom built Genesis child theme, and although it started out as the Whitespace Pro theme from StudioPress, it has developed into a much more advanced fork.
 
